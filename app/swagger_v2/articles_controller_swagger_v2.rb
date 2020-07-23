@@ -1,10 +1,10 @@
-class ArticlesControllerSwagger
+class ArticlesControllerSwaggerV2
   include Swagger::Blocks
 
   swagger_path '/articles' do
 	operation :get do
-	  key :description, 'article list'
-	  key :operationId, 'articleIndex'
+	  key :description, 'article list V2'
+	  key :operationId, 'articleIndex V2'
 	  key :tags, [
 		'article'
 	  ]

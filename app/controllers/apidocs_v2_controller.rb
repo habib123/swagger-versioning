@@ -1,4 +1,4 @@
-class ApidocsController < ApplicationController
+class ApidocsV2Controller < ApplicationController
   include Swagger::Blocks
 
   swagger_root do
@@ -32,9 +32,9 @@ class ApidocsController < ApplicationController
 
   # A list of all classes that have swagger_* declarations.
   SWAGGERED_CLASSES = [
-    ArticleSwagger,
-    ErrorModelSwagger,
-    ArticlesControllerSwagger,
+    ArticleSwaggerV2,
+    ErrorModelSwaggerV2,
+    ArticlesControllerSwaggerV2,
     self,
   ].freeze
 

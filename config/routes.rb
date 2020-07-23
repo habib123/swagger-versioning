@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   resources :apidocs, only: [:index]
+  resources :apidocs_v2, only: [:index]
+  mount SwaggerUiEngine::Engine, at: "/api_docs"
+  #get '/api' => redirect('/swagger/dist/index.html?url=/apidocs.json')
 
   resources :articles
   # The priority is based upon order of creation: first created -> highest priority.
